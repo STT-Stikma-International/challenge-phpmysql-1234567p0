@@ -8,7 +8,10 @@ $email = $_POST['email'];
 
 
 //TODO: insert nama, nim, kelas, email
-
+$sql = "INSERT INTO mahasiswa"
+('nama', 'nim', 'kelas', 'email')
+values
+('$name','$email', 'nim', 'kelas')
 // ---
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil disimpan";
