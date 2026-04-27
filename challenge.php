@@ -8,7 +8,10 @@ $email = $_POST['email'];
 
 
 //TODO: insert nama, nim, kelas, email
-
+$sql = "INSERT INTO mahasiswa"
+('nama', 'nim', 'kelas', 'email')
+values
+('$name','$email', 'nim', 'kelas')
 // ---
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil disimpan";
@@ -42,6 +45,8 @@ $conn->close();
 
 
 //TODO: SELECT data mahasiswa
+$sql = SELECT data mahasiswa 
+$resault = "SELECT nama , nim, kelas, email, FROM mahasiswa"
 
 // ---
 if ($result->num_rows > 0) {
@@ -95,7 +100,8 @@ $conn->close();
 
 
 //TODO: UPDATE DATA MAHASISWA
-
+$sql = "UPTADE mahasiswa
+set email= 'mmm' WHERE id=4 ";
 //---
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil diupdate";
